@@ -225,3 +225,6 @@ a {
 .btn2 a {
   color: var(--dark-color-a);
 }
+.custom_room{
+  margin-top:5px;
+}
