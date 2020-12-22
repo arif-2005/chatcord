@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="../20201214_213515.png">
-  <meta name="description" content="The SPI LAB CHATCORD provides you a end-to-end encrypted chatting survice...">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -20,8 +18,31 @@
         <h1><i class="fas fa-smile"></i> ChatCord</h1>
         <a href="index.html" class="btn , btn1">Leave Room</a>
       </header>
+       <div class="back" id="back" onclick="e()"> Users</div>
+      <div class="goback" id="goback" onclick="t()"> Go back</div>
+      
+         <script> 
+      const back= getElementById("back");
+      const goback=getElimentById("goback");
+      
+      function e(){
+        document.getElementById("back").classList.add("back-hide");
+        document.getElementById("goback").classList.add("goback-show");
+ document.getElementById("slidebar").classList.add('details');
+        
+         }
+      
+      function t(){
+        
+        document.getElementById("back").classList.remove("back-hide");
+        document.getElementById("goback").classList.remove("goback-show");
+ document.getElementById("slidebar").classList.remove('details');
+        
+         }
+           
+         </script>
       <main class="chat-main">
-        <div class="chat-sidebar">
+        <div class="chat-sidebar" id="slidebar">
           <h3><i class="fas fa-comments"></i> Room Name:</h3>
           <h2 id="room-name"></h2>
           <h3><i class="fas fa-users"></i> Users</h3>
@@ -42,7 +63,7 @@
         </form>
       </div>
     </div>
-    <script>
+    <script src="js/moment.js">
     
     </script>
 
