@@ -43,7 +43,7 @@ a {
 .chat-container {
 	max-width: 1100px;
 	background: #fff;
-	margin: 30px auto;
+	margin: 0px;
 	overflow: hidden;
 }
 
@@ -179,6 +179,9 @@ a {
 	margin-top: 20px;
 	width: 100%;
 }
+.back{
+  display:none;
+}
 
 @media (max-width: 700px) {
 	.chat-main {
@@ -196,6 +199,18 @@ a {
   }
   .btn p {
     display:none;
+  }
+  .chat-container{
+    max-width: 100%;
+  }
+  .back{
+    display:block;
+    padding-left: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    background-color : var(--dark-color-b);
+    text-align:center;
   }
 }
 .cversio-hr{
@@ -227,4 +242,50 @@ a {
 }
 .custom_room{
   margin-top:5px;
+}
+.hi{
+  display:block;
+}
+.head{text-align:center;}
+.km_container{
+  background: var(--dark-color-a);
+  color:white;
+  border-radius: 5px 5px 0px 0px;
+}
+.km_content{
+  background: var(--dark-color-b);
+  margin-top: 20px; 
+}
+.Q {
+  margin:10px;
+}
+.P{
+  margin-left:20px;
+}
+.description{
+  margin:10px;
+  text-align:center; 
+}
+.back1{
+  color:white;
+  text-align:center;
+}
+.details{
+  display: block;
+}
+.back-hide{
+  display:none;
+}
+.goback{
+  display:none;
+}
+.goback-show{
+  display:block;
+  display:block;
+    padding-left: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    background-color : var(--dark-color-b);
+  text-align:center;
 }
